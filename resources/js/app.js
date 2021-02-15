@@ -1,0 +1,12 @@
+require('./bootstrap');
+
+window.Vue = require('vue').default;
+
+Vue.component("app-component", require("./components/App.vue").default);
+Vue.component("Body-component", require("./components/Body.vue").default);
+
+
+
+const app = new Vue({
+    el: '#app',
+});
